@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>你的公司名称｜一句话定位/主营业务</title>
+  <meta name="description" content="用一句清晰的话说明你是谁、做什么、为谁解决什么问题（50-150字）。" />
+  <link rel="canonical" href="https://your-domain.com/" />
+  <link rel="icon" href="/logo.png" />
+  <meta name="theme-color" content="#0C65F6" />
+
+  <!-- Open Graph / 分享卡片 -->
+  <meta property="og:title" content="你的公司名称" />
+  <meta property="og:description" content="你的公司一句话定位与价值主张。" />
+  <meta property="og:image" content="https://your-domain.com/hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+
+  <!-- 结构化数据（可选，记得替换占位信息） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "你的公司名称",
+    "url": "https://your-domain.com",
+    "logo": "https://your-domain.com/logo.png",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/hero.jpg">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <img src="/logo.png" alt="公司Logo" width="36" height="36" />
+      <span>你的公司名称</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#solutions">解决方案</a>
+      <a href="#about">关于我们</a>
+      <a href="#contact" class="btn btn-small">联系我们</a>
+    </nav>
+    <button class="menu-btn" aria-label="打开菜单" aria-controls="nav" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>一句话说明你做什么 <span class="accent">为谁创造价值</span></h1>
+        <p class="lead">再用一两句话，讲清核心痛点与成果：更快、更省、更稳（可量化的结果更有说服力）。</p>
+        <div class="cta-group">
+          <a href="#contact" class="btn">预约咨询</a>
+          <a href="#solutions" class="btn btn-ghost">了解方案</a>
+        </div>
+        <div class="trust">
+          <small>已服务：某行业头部客户 / 合作伙伴Logo等</small>
+        </div>
+      </div>
+      <div class="hero-media">
+      <img src="/hero.jpg" alt="产品/场景图" loading="eager" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="section">
+    <div class="container">
+      <h2>我们的解决方案</h2>
+      <p class="section-intro">用3–6个卡片展示产品/服务与收益点，每个卡片一句话标题 + 两三行说明。</p>
+      <div class="grid">
+        <article class="card">
+          <h3>方案A</h3>
+          <p>一句话价值点，突出结果或差异化。</p>
+        </article>
+        <article class="card">
+          <h3>方案B</h3>
+          <p>一句话价值点，突出结果或差异化。</p>
+        </article>
+        <article class="card">
+          <h3>方案C</h3>
+          <p>一句话价值点，突出结果或差异化。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container about">
+      <div>
+        <h2>关于我们</h2>
+        <p>用100–200字简述：成立背景、团队经验/资质、愿景使命、里程碑（可列1–3个）。</p>
+        <ul class="ticks">
+          <li>里程碑或资质亮点</li>
+          <li>核心技术或方法论</li>
+          <li>客户成功数据（可量化）</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div><strong>100+</strong><span>企业客户</span></div>
+        <div><strong>98%</strong><span>续约率</span></div>
+        <div><strong>24/7</strong><span>技术支持</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>联系我们</h2>
+      <p>留下你的需求，我们将尽快联系你。</p>
+      <form class="contact-form" name="contact" netlify>
+        <label>
+          姓名
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          邮箱
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          需求简述
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <!-- 无后端场景：可以把 action 换成 mailto 或使用 Netlify/Formspree 等第三方 -->
+        <button type="submit" class="btn">提交</button>
+        <p class="form-tip">或直接发邮件至：<a href="mailto:hi@your-domain.com">hi@your-domain.com</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <small>© <span id="year"></span> 你的公司名称 · 保留所有权利</small>
+    <small><a href="/privacy.html">隐私政策</a></small>
+    <small class="icp">（如在中国内地托管：在此放ICP备案号）</small>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
